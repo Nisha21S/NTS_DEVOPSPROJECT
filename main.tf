@@ -152,7 +152,13 @@ resource "aws_spot_instance_request" "nisha_spot1" {
   }
 }
 
+output "instance_ip_pub" {
 
+    value = aws_spot_instance_request.nisha_spot1.public_ip
+
+   
+
+  }
 
 
 
